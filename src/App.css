@@ -38,12 +38,15 @@
 .card-wrapper h6 {
   color: #df0808;
 }
-.card-wrapper h6 span:first-child{
+
+.card-wrapper h6 span:first-child {
   color: #333;
   text-transform: capitalize;
-  font-size: 13px; font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 }
-.card-wrapper h6 span:last-child{
+
+.card-wrapper h6 span:last-child {
   text-transform: capitalize;
   display: inline-block;
   border: 1px solid #000;
@@ -91,6 +94,34 @@
 .card-price del {
   color: #969696;
 }
-.form-check-label{
+
+.form-check-label {
   text-transform: capitalize;
+}
+
+@media (max-width:1024px) {
+  .card-wrapper {
+    width: calc(50% - 22px);
+  }
+}
+
+@media (max-width:991px) {
+  .card-wrapper {
+    width: calc(50% - 22px);
+  }
+}
+
+@media (max-width:430px) {
+  .card-wrapper {
+    width: calc(100% - 22px);
+  }
+
+  .container-left {
+    width: 150px;
+  }
+
+  .container-right {
+    width: calc(100%);
+    padding-left: 150px;
+  }
 }

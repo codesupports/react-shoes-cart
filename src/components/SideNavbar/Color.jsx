@@ -26,7 +26,7 @@ const Color = ({ data }) => {
 
     return (
         <section className="category-block">
-            <h5 className='py-3'>Category</h5>
+            <h5 className='py-3'>Colors</h5>
             {
                 filterName && filterName.map((item, i) => {
                     return (

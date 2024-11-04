@@ -11,9 +11,9 @@ const SideNavbar = () => {
 
   return (
     <div>
-      <Category data={data}/>
-      <Price data={data}/>
-      <Color data={data}/>
+      <Category data={data} category={"Category"}/>
+      <Price data={data} category={"Price"}/>
+      <Color data={data} category={"Colors"}/>
     </div>
   )
 }
