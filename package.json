@@ -1,10 +1,13 @@
 {
+  "homepage": "https://codesupports.github.io/react-shoes-cart",
   "name": "react-redux-example",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
+    "deploy": "gh-page -d build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
