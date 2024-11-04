@@ -1,0 +1,84 @@
+.conatiner-cartaera {
+    width: calc(100% - 250px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shopping-cartaera {
+    width: 250px;
+    border: 1px solid #e6e6e6;
+    background-color: #fff;
+    border-radius: 8px;
+    /* box-shadow: 1px 0px 5px #00000020; */
+    overflow: hidden;
+
+    ul {
+        margin: 0;
+        padding: 0;
+
+        li {
+            padding: 5px 10px 5px;
+            font-size: 14px;
+            border-bottom: 1px solid #eee;
+            list-style-type: disc;
+
+            span {
+                display: block;
+
+                &.product-price {
+                    font-weight: 600;
+                    color: #0d6efd;
+                }
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            img {
+                width: 30px;
+                float: right;
+
+            }
+        }
+    }
+
+    .cart-summary {
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        border-top: 1px solid #e5e5e5;
+        padding: 10px 10px 30px 10px;
+        font-size: 14px;
+
+        .cart-summary-line {
+            clear: both;
+            padding: 0 0 5px;
+        }
+
+        .label {
+            padding-left: 0;
+            white-space: inherit;
+            float: left;
+        }
+
+        .value {
+            color: #000;
+            display: block;
+            float: right;
+            font-weight: 400;
+            padding-left: 28px;
+            position: relative;
+        }
+    }
+}
+
+.toggle-title {
+    background-color: #e1e0e0;
+    font-size: 16px;
+    padding: 10px;
+}

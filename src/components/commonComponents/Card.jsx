@@ -4,7 +4,7 @@ import { IoIosAddCircle } from "react-icons/io";
 import { useDispatch } from 'react-redux';
 import { addToCartDataFunc } from '../../features/AddToCartSlice'
 
-const Card = ({ data, isButton }) => {
+const Card = ({ data, isButton, quantity }) => {
   const dispatch = useDispatch();
 
   const starRating = [];
@@ -19,7 +19,8 @@ const Card = ({ data, isButton }) => {
 
 
   return (
-    <div className='card-wrapper'>
+    <div className='card-wrapper position-relative'>
+      {quantity && <span className="product-quantity">Quantity : {quantity}</span>}
       <figure>
         <img src={data.img} alt={data.title} />
       </figure>

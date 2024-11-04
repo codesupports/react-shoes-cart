@@ -18,6 +18,19 @@
   position: relative;
 }
 
+.product-quantity {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #e4e4e4;
+  border-radius: 0 5px 0 0;
+  text-align: center;
+  padding: 5px;
+  box-shadow: 5px 5px 5px #00000030;
+  font-size: 12px;
+  font-weight: bold;
+}
+
 .container-right {
   width: calc(100%);
   padding-left: 250px;

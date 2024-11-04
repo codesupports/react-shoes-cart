@@ -7,9 +7,9 @@ import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-    const { slectedCatagory } = useSelector((state) => state.addToCartSlice);
+    const { slectedCatagory } = useSelector((state) => state.sideNavSlice);
     const addToCardData = useSelector((state) => state.addToCartSlice.items);
-    console.log('addToCardData', addToCardData.length)
+    // console.log('slectedCatagory', slectedCatagory)
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex navbar-modi pt-3">
             <div className="navbar-search ms-3 ">
