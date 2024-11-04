@@ -1,0 +1,96 @@
+.container-left {
+  width: 250px;
+  position: fixed;
+  height: 100vh;
+  border-right: 1px solid #e7e7e7;
+}
+
+.container-right {
+  width: calc(100%);
+  padding-left: 250px;
+}
+
+.category-block h5 {
+  border-bottom: 1px dashed #e7e7e7;
+  padding-left: 10px;
+}
+
+.category-block .form-check {
+  padding-left: 36px;
+}
+
+.card-contnaier {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-wrapper {
+  border: 1px solid #e7e7e7;
+  background-color: #fff;
+  border-radius: 6px;
+  width: calc(20% - 22px);
+  margin: 0 10px 10px;
+  padding: 16px;
+  transition: all 200ms ease;
+
+}
+
+.card-wrapper h6 {
+  color: #df0808;
+}
+.card-wrapper h6 span:first-child{
+  color: #333;
+  text-transform: capitalize;
+  font-size: 13px; font-weight: bold;
+}
+.card-wrapper h6 span:last-child{
+  text-transform: capitalize;
+  display: inline-block;
+  border: 1px solid #000;
+  width: 20px;
+  height: 14px;
+}
+
+.card-wrapper:hover {
+  box-shadow: 0px 0px 20px #33333330;
+  border-color: #5f3bff;
+}
+
+.card-wrapper:hover img {
+  transform: scale(1.1);
+}
+
+.card-wrapper figure {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  padding: 16px 0;
+  margin: 0;
+}
+
+.card-wrapper figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  transition: all 500ms ease;
+}
+
+.card-add-btn {
+  border-top: 1px solid #e7e7e7;
+  margin-top: 10px;
+}
+
+.card-price {
+  color: #df0808;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-price del {
+  color: #969696;
+}
+.form-check-label{
+  text-transform: capitalize;
+}

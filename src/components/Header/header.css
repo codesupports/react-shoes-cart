@@ -1,0 +1,17 @@
+.navbar-modi{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 1px solid #e7e7e7;
+    box-shadow: 1px 1px 10px #33333310;
+    
+}
+.navbar-right{
+    gap:30px;
+    font-size: 28px;
+}
+.navbar-right svg{
+    cursor: pointer;;
+}
+.navbar-right svg:hover{
+    color: #00a3ff;
+}
