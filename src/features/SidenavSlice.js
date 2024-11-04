@@ -8,7 +8,7 @@ import dbData from '../db/data'
 //     // }
 //     console.log('sss', response)
 //     return response.json();
-    
+
 //   });
 
 const sideNavSlice = createSlice({
@@ -17,16 +17,16 @@ const sideNavSlice = createSlice({
         data: dbData,
         loading: false,
         error: null,
-        slectedCatagory:'',
-        priceRange:0,
-        color:'',
+        slectedCatagory: '',
+        priceRange: 0,
+        color: '',
         // filterDataList:dbData
-      },
+    },
     reducers: {
         categoryData: (state, action) => {
             state.slectedCatagory = action.payload;
         },
-        priceRangeData:(state, action) => {
+        priceRangeData: (state, action) => {
             state.priceRange = action.payload;
         },
         categoryColor: (state, action) => {
@@ -48,7 +48,7 @@ const sideNavSlice = createSlice({
     //       .addCase(fetchData.rejected, (state, action) => {
     //         state.loading = false;
     //         state.error = action.error.message;
-            
+
     //       });
     //   },
 })

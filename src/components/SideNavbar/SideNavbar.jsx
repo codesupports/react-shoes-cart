@@ -3,17 +3,25 @@ import Category from './Category'
 import Price from './Price'
 import Color from './Color'
 import { useDispatch, useSelector } from 'react-redux';
-// import {fetchData} from '../../features/SidenavSlice'
+import { Link } from 'react-router-dom';
+import { FaHome } from "react-icons/fa";
+
 
 const SideNavbar = () => {
-  const { data, loading, error } = useSelector((state) => state.sideNavSlice);
+  const { data } = useSelector((state) => state.sideNavSlice);
 
 
   return (
-    <div>
-      <Category data={data} category={"Category"}/>
-      <Price data={data} category={"Price"}/>
-      <Color data={data} category={"Colors"}/>
+    <div className='position-reletive'>
+      <div className='logo-wrapper'>
+        <Link to="/" role='logo' alt="Company Name - Homepage">
+          <FaHome role="img"
+            aria-label="Company Name - Homepage" />
+        </Link>
+      </div>
+      <Category data={data} category={"Category"} />
+      <Price data={data} category={"Price"} />
+      <Color data={data} category={"Colors"} />
     </div>
   )
 }

@@ -25,19 +25,19 @@ const Product = () => {
       {(slectedCatagory === 'All' && color === 'All') &&
         mainData.map((item, index) => {
           return (
-            <Card key={index} data={item} />
+            <Card key={index} data={item} isButton={true} />
           )
         })}
-        {slectedCatagory === slectedCatagory &&
+      {slectedCatagory === slectedCatagory &&
         filterdData.map((item, index) => {
           return (
-            <Card key={index} data={item} />
+            <Card key={index} data={item} isButton={true} />
           )
         })}
-        {color === color &&
+      {color === color &&
         filterdDataByColor.map((item, index) => {
           return (
-            <Card key={index} data={item} />
+            <Card key={index} data={item} isButton={true} />
           )
         })}
     </>

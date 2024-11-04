@@ -3,6 +3,19 @@
   position: fixed;
   height: 100vh;
   border-right: 1px solid #e7e7e7;
+
+  .logo-wrapper {
+    position: absolute;
+    right: 10px;
+    top: 2px;
+    font-size: 30px;
+    padding: 0 10px;
+  }
+
+}
+
+.position-reletive {
+  position: relative;
 }
 
 .container-right {
@@ -97,6 +110,11 @@
 
 .form-check-label {
   text-transform: capitalize;
+}
+
+.capital-letter {
+  text-transform: capitalize;
+  font-weight: bold;
 }
 
 @media (max-width:1024px) {
