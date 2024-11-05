@@ -38,15 +38,17 @@ const AddToCartPage = ({ data }) => {
     })
     // console.log(totalPrice)
     return (
-        <div className='d-flex w-100'>
-            <div className='conatiner-cartaera'>
-                {uniqueObject?.map((item, index) => {
-                    return (
-                        <Card key={index} data={item} isButton={false} quantity={productQuantity(item.id)} />
-                    )
-                })}
+        <div className='shopping-main'>
+            <div className='cart-container--left'>
+                <div className='conatiner-cartaera'>
+                    {uniqueObject?.map((item, index) => {
+                        return (
+                            <Card key={index} data={item} isButton={false} quantity={productQuantity(item.id)} />
+                        )
+                    })}
+                </div>
             </div>
-            <div className='shopping-cartaera position-relative'>
+            <div className='shopping-cartaera'>
                 <h4 className='toggle-title'>Shopping Cart (5)</h4>
                 <ul>
                     {uniqueObject?.map((item, index) => {
@@ -65,7 +67,7 @@ const AddToCartPage = ({ data }) => {
                         <span className="value">${totalPrice}.00</span>
                     </div>
                     <div className="cart-summary-line">
-                        <span className="label js-subtotal">Shipping</span>
+                        <span className="label js-subtotal">Shipping Charge</span>
                         <span className="value">$7.00</span>
                     </div>
                     <div className="cart-summary-line pt-4 ">

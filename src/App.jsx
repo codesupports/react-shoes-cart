@@ -14,9 +14,10 @@ function App() {
         <div className="container-left pl-2">
           <SideNavbar />
         </div>
+        <div className="overlay"></div>
         <div className="container-right">
           <Header />
-          <div className="card-contnaier px-3 py-3">
+          <div className="card-contnaier1 px-3 py-3">
             <Routes>
               <Route path="/" element={<Product />} />
               <Route path="/cartPage" element={<AddToCartPage data={data} />} />

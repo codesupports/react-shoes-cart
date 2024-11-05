@@ -11,7 +11,7 @@ const Header = () => {
     const addToCardData = useSelector((state) => state.addToCartSlice.items);
     // console.log('slectedCatagory', slectedCatagory)
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex navbar-modi pt-3">
+        <nav className="navbar navbar-expand-lg navbar-light d-flex navbar-modi pt-3">
             <div className="navbar-search ms-3 ">
                 <input className='form-control' type="text" placeholder='Search. with Brand... ' />
             </div>

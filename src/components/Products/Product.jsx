@@ -21,7 +21,7 @@ const Product = () => {
 
 
   return (
-    <>
+    <div className='card-contnaier'>
       {(slectedCatagory === 'All' && color === 'All') &&
         mainData.map((item, index) => {
           return (
@@ -40,7 +40,7 @@ const Product = () => {
             <Card key={index} data={item} isButton={true} />
           )
         })}
-    </>
+    </div>
   )
 }
 
