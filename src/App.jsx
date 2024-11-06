@@ -5,11 +5,14 @@ import Product from "./components/Products/Product";
 import SideNavbar from "./components/SideNavbar/SideNavbar";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { useSelector } from 'react-redux';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const data = useSelector((state) => state.addToCartSlice.items);
   return (
     <>
+      <ToastContainer autoClose={3000} />
       <div className="container-fluid d-flex p-0">
         <div className="container-left pl-2">
           <SideNavbar />

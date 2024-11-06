@@ -3,9 +3,12 @@ import { MdOutlineStar } from "react-icons/md";
 import { IoIosAddCircle } from "react-icons/io";
 import { useDispatch } from 'react-redux';
 import { addToCartDataFunc } from '../../features/AddToCartSlice'
+import { ToastContainer, toast } from 'react-toastify';
 
 const Card = ({ data, isButton, quantity }) => {
   const dispatch = useDispatch();
+
+  const toastNotifySuccess = () => toast.success("Item Added Successfully!");
 
   const starRating = [];
   for (let i = 0; i < data.star; i++) {
@@ -14,12 +17,14 @@ const Card = ({ data, isButton, quantity }) => {
 
   const addToCart = (val) => {
     dispatch(addToCartDataFunc(val));
+    toastNotifySuccess()
   }
 
 
 
   return (
     <div className='card-wrapper position-relative'>
+
       {quantity && <span className="product-quantity">Quantity : {quantity}</span>}
       <figure>
         <img src={data.img} alt={data.title} />
